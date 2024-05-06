@@ -21,7 +21,7 @@ def close_db(error):
 
 @app.route('/0-hbnb/', strict_slashes=False)
 def hbnb():
-    cache-id = str(uuid.uuid4())
+    cache_id = str(uuid.uuid4())
     """ Generate a UUID """
     states = storage.all(State).values()
     states = sorted(states, key=lambda k: k.name)
